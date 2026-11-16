@@ -217,7 +217,18 @@ body.sp-auth-ready #sp-auth-bar{display:flex}
 #sp-auth-logout{border:1px solid #555761;border-radius:999px;padding:6px 10px;background:#292a30;color:#fff;font:inherit;cursor:pointer}
 @media(max-width:520px){#sp-auth-card{padding:23px}#sp-auth-bar{top:7px;right:7px}#sp-auth-email{max-width:145px}}
 </style>
-</head><body>
+<style>
+#sp-auth-logout {
+  position: fixed !important;
+  top: 16px !important;
+  right: 16px !important;
+  left: auto !important;
+  bottom: auto !important;
+  z-index: 99999 !important;
+  padding: 7px 12px !important;
+  font-size: 12px !important;
+}
+</style></head><body>
 <div id="sp-auth-gate" role="dialog" aria-modal="true" aria-labelledby="sp-auth-title">
   <div id="sp-auth-card">
     <div class="sp-auth-brand">Sub<span>-prime</span></div>
