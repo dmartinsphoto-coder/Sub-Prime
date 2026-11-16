@@ -215,19 +215,20 @@ body.sp-auth-ready #sp-auth-gate{display:none}
 body.sp-auth-ready #sp-auth-bar{display:flex}
 #sp-auth-email{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:230px}
 #sp-auth-logout{border:1px solid #555761;border-radius:999px;padding:6px 10px;background:#292a30;color:#fff;font:inherit;cursor:pointer}
-@media(max-width:520px){#sp-auth-card{padding:23px}#sp-auth-bar{top:7px;right:7px}#sp-auth-email{max-width:145px}}
-</style>
 <style>
 #sp-auth-logout {
   position: fixed !important;
-  top: 16px !important;
-  right: 16px !important;
-  left: auto !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
   bottom: auto !important;
+  transform: translate(-50%, -50%) !important;
   z-index: 99999 !important;
-  padding: 7px 12px !important;
-  font-size: 12px !important;
+  padding: 6px 10px !important;
+  font-size: 11px !important;
+  opacity: 0.65 !important;
 }
+</style>
 </style></head><body>
 <div id="sp-auth-gate" role="dialog" aria-modal="true" aria-labelledby="sp-auth-title">
   <div id="sp-auth-card">
